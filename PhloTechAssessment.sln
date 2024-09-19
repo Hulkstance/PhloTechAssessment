@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{19113772-DA5A-4773-B55F-7D65D07D0593}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52FEAA6C-69F6-4F9D-ABE1-9C1BC3F003C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phlo.TechAssessment.Api", "src\Phlo.TechAssessment.Api\Phlo.TechAssessment.Api.csproj", "{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51AC593E-D1CC-4FF9-867C-CBE865C9F5F6} = {19113772-DA5A-4773-B55F-7D65D07D0593}
+	EndGlobalSection
+EndGlobal
