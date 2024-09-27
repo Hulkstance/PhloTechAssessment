@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Phlo.TechAssessment.Api.Auth;
 using Phlo.TechAssessment.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,10 @@ builder.Services.AddSingleton<IProductProcessor, ProductProcessor>();
 builder.Services.AddHttpClient<ProductService>();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.OperationFilter<ApiKeyOperationFilter>();
+});
 
 var app = builder.Build();
 
@@ -47,6 +51,7 @@ app.MapGet("/filter", async (
         );
     })
     .WithName("FilterProducts")
-    .WithOpenApi();
+    .WithOpenApi()
+    .AddEndpointFilter<ApiKeyEndpointFilter>();
 
 app.Run();
